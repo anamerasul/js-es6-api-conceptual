@@ -15,6 +15,17 @@ console.log('connected');
 
 // }
 
+// const mainurl=()=>{
+//         const fetchUrl=(inputValue)=>{
+//                 const url=`https://deckofcardsapi.com/api/deck/new/draw/?count=${inputValue}`
+
+//                 fetch(url)
+//                 .then(res=>res.json())
+//                 .then(data=>displayData(data)) 
+// }
+// return fetchUrl()
+// }
+
 const rowDiv =document.getElementById('row');
 
 const spinner= document.getElementById('spinner')
@@ -171,6 +182,8 @@ document.getElementById('remaining').innerHTML=`<div class="mx-auto text-center 
         
 }
 
+
+
 const cardDetaitls =(code)=>{
         // console.log(code)
         const cardvaluecode=code
@@ -208,6 +221,7 @@ const cardDetaitls =(code)=>{
        <h5 class="card-title">suit: ${SingleCard.suit}</h5>
      
        <p class="card-text">code: ${SingleCard.code}</p>
+       <a href='index.html'class="btn btn-primary">back</a>
      </div>
      </div>
      
@@ -223,3 +237,4 @@ const cardDetaitls =(code)=>{
      rowDiv.appendChild(div)
         }
 }
+
